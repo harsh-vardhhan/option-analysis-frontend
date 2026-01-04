@@ -1,6 +1,7 @@
 import React from 'react';
 import Hero from './components/Hero';
 import TerminalDemo from './components/TerminalDemo';
+import KeyboardShortcuts from './components/KeyboardShortcuts';
 import Downloads from './components/Downloads';
 import Instructions from './components/Instructions';
 
@@ -13,6 +14,7 @@ function App() {
       <main className="relative">
         <Hero />
         <TerminalDemo />
+        <KeyboardShortcuts />
         <Downloads />
         <Instructions />
       </main>

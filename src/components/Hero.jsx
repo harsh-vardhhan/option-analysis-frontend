@@ -15,10 +15,12 @@ const Hero = () => {
                 Trakbit
             </h1>
 
-            <p className="text-xl md:text-2xl text-gray-400 max-w-2xl mx-auto px-4 leading-relaxed font-light">
-                The terminal-based <span className="text-green-400 font-normal">Options Analytics Tool</span> reimagined for modern workflows.
+            <p className="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto px-4 leading-relaxed font-light">
+                The <span className="text-green-400 font-normal">Keyboard-First</span> Options Analytics Tool.
+                <br className="hidden md:block" />
+                Design option strategies simply using your keyboard.
             </p>
-        </section>
+        </section >
     );
 };
 
