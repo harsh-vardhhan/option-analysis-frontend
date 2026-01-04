@@ -14,50 +14,58 @@ const KeyboardShortcuts = () => {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    {/* Navigation Group */}
+                    {/* Expiry Switching Group */}
                     <div className="bg-[#121212]/50 rounded-3xl border border-white/10 p-8 hover:border-white/20 transition-colors backdrop-blur-sm">
                         <h3 className="text-xl font-semibold mb-8 flex items-center gap-3 text-gray-200 border-b border-white/5 pb-4">
                             <Command className="w-5 h-5 text-green-400" />
-                            Navigation
+                            Expiry Switching
                         </h3>
 
                         <div className="space-y-6">
                             <ShortcutRow
-                                keys={['↑', '↓', '←', '→']}
-                                label="Navigate grid cells"
+                                keys={['Shift', '←']}
+                                label="Switch to Previous Expiry"
                             />
                             <ShortcutRow
-                                keys={['Tab']}
-                                label="Switch focus: Option Chain ↔ Strategy Panel"
+                                keys={['Shift', '→']}
+                                label="Switch to Next Expiry"
                             />
                         </div>
                     </div>
 
-                    {/* Actions Group */}
+                    {/* Position Management Group */}
                     <div className="bg-[#121212]/50 rounded-3xl border border-white/10 p-8 hover:border-white/20 transition-colors backdrop-blur-sm">
                         <h3 className="text-xl font-semibold mb-8 flex items-center gap-3 text-gray-200 border-b border-white/5 pb-4">
                             <span className="text-green-400 font-mono text-lg">$_</span>
-                            Trading Actions
+                            Position Management
                         </h3>
 
                         <div className="space-y-6">
                             <ShortcutRow
                                 keys={['B']}
-                                label="Buy option (+1 qty)"
+                                label="Buy option at selected type"
                                 accent
                             />
                             <ShortcutRow
                                 keys={['S']}
-                                label="Sell option (-1 qty)"
+                                label="Sell option at selected type"
                                 accent
                             />
                             <ShortcutRow
-                                keys={['Del']}
+                                keys={['Del', '⌫']}
                                 label="Remove position"
                             />
                             <ShortcutRow
                                 keys={['Space']}
-                                label="Select for moving"
+                                label="Select/Deselect position"
+                            />
+                            <ShortcutRow
+                                keys={['Shift', '↑']}
+                                label="Move position to lower strike"
+                            />
+                            <ShortcutRow
+                                keys={['Shift', '↓']}
+                                label="Move position to higher strike"
                             />
                         </div>
                     </div>
