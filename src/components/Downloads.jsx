@@ -1,4 +1,3 @@
-import React from 'react';
 import { Command, AppWindow, Terminal, Download, ArrowRight } from 'lucide-react';
 import clsx from 'clsx';
 

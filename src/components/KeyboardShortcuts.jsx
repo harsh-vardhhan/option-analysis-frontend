@@ -1,5 +1,4 @@
-import React from 'react';
-import { Command, ArrowUp, ArrowDown, ArrowLeft, ArrowRight, CornerDownLeft, Space } from 'lucide-react';
+import { Command } from 'lucide-react';
 
 const KeyboardShortcuts = () => {
     return (

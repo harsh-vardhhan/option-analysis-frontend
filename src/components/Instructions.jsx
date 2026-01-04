@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Terminal, Check, Copy, ArrowRight } from 'lucide-react';
+import { useState } from 'react';
+import { Check, Copy, ArrowRight, Terminal } from 'lucide-react';
 import clsx from 'clsx';
 
 const Instructions = () => {
@@ -39,6 +39,32 @@ const Instructions = () => {
                             className="px-5 py-2.5 rounded-lg bg-blue-500/10 text-blue-400 border border-blue-500/20 hover:bg-blue-500/20 hover:border-blue-500/40 transition-all text-sm font-medium flex items-center gap-2"
                         >
                             Get Access Token
+                            <ArrowRight className="w-4 h-4" />
+                        </a>
+                    </div>
+
+                    {/* Recommended Terminal */}
+                    <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 border-b border-white/5 pb-8">
+                        <div>
+                            <div className="flex items-center gap-2 mb-2 text-purple-400">
+                                <Terminal className="w-4 h-4" />
+                                <h3 className="font-semibold uppercase tracking-wider text-xs">Recommendation</h3>
+                            </div>
+                            <p className="text-gray-300 text-lg font-medium">
+                                Use Ghostty Terminal
+                            </p>
+                            <p className="text-gray-500 text-sm mt-1 max-w-sm">
+                                For the best experience, we strongly recommend running this application using Ghostty.
+                            </p>
+                        </div>
+
+                        <a
+                            href="https://ghostty.org/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="px-5 py-2.5 rounded-lg bg-purple-500/10 text-purple-400 border border-purple-500/20 hover:bg-purple-500/20 hover:border-purple-500/40 transition-all text-sm font-medium flex items-center gap-2"
+                        >
+                            Download Ghostty
                             <ArrowRight className="w-4 h-4" />
                         </a>
                     </div>

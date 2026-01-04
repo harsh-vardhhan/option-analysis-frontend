@@ -1,5 +1,3 @@
-import React from 'react';
-
 const TerminalDemo = () => {
     return (
         <div className="w-full max-w-5xl mx-auto px-4 mb-24 relative z-10 group perspective-1000">
