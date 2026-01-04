@@ -3,6 +3,7 @@ import TerminalDemo from './components/TerminalDemo';
 import KeyboardShortcuts from './components/KeyboardShortcuts';
 import Downloads from './components/Downloads';
 import Instructions from './components/Instructions';
+import SecurityFeatures from './components/SecurityFeatures';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <main className="relative">
         <Hero />
         <TerminalDemo />
+        <SecurityFeatures />
         <KeyboardShortcuts />
         <Downloads />
         <Instructions />
